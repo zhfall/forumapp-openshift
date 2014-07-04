@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/zhfall/forumapp-openshift.png)](https://travis-ci.org/zhfall/forumapp-openshift)
+
 forumapp
 ========
 
