@@ -1,6 +1,15 @@
 language: java
 script: mvn package -Popenshift
 jdk:
-  - oraclejdk7
-  - openjdk7
-  - openjdk6
+- oraclejdk7
+- openjdk7
+- openjdk6
+deploy:
+  provider: openshift
+  user: zhfall@126.com
+  password:
+    secure: KJzARq/66c478Y/IJnw+AtC+JTFXUoF+mvJPByMsqZoANb4vs2H99x1OGzaIzb0hrr0wYqaN3NY11SjB59CtxCDhh+KAqy6dA3GdKxL0JqLujF752ppJj/1l00rSwyFsYGBzid7JvsEt0IJJ3sEpdO7KL94NVmLZplZ/038PY5Y=
+  app: forumapp-openshift
+  domain: forumapp-zhfall
+  on:
+    repo: zhfall/forumapp-openshift
